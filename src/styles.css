@@ -1,6 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "~@fortawesome/fontawesome-free/css/all.css";
+@font-face {
+    font-family: 'IranianSans';
+    font-style: normal;
+    font-weight: 500;
+    font-display: block;
+    src: url("./assets/fonts/IranianSans.ttf") format("truetype") }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+  html, body { height: 100%; }
+body { margin: 0; font-family: "IranianSans" !important}
