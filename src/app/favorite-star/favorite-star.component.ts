@@ -1,5 +1,5 @@
-import { Component, Input, Output } from '@angular/core';
-import { EventEmitter } from 'events';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+
 
 @Component({
   selector: 'favorite-star',
@@ -8,11 +8,13 @@ import { EventEmitter } from 'events';
 })
 export class FavoriteStarComponent {
   @Input() isSelected:boolean | undefined;
- 
+  @Output() change = new EventEmitter(); 
 
   constructor() { }
 
   onFavStarClick(){
     this.isSelected=!this.isSelected;
+    this.change.emit(this.isSelected);
+   console.log(this.isSelected);
   }
 }
