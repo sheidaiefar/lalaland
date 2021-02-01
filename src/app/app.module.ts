@@ -4,8 +4,10 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FavoriteStarComponent } from './favorite-star/favorite-star.component';
-import { UserModule } from './user/user.module';
+import { FavoriteStarComponent } from './project/pages/rating/favorite-star/favorite-star.component';
+import { UserModule } from './project/pages/user/user.module';
+
+
 
 @NgModule({
   declarations: [
