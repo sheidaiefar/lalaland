@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FavoriteStarComponent } from './project/pages/rating/favorite-star/favorite-star.component';
 import { UserModule } from './project/pages/user/user.module';
+import { LayoutModule } from './project/pages/layout/layout.module';
 
 
 
@@ -18,7 +19,8 @@ import { UserModule } from './project/pages/user/user.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    UserModule
+    UserModule,
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
