@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FavoriteStarComponent } from './project/pages/rating/favorite-star/favorite-star.component';
 import { UserModule } from './project/pages/user/user.module';
 import { LayoutModule } from './project/pages/layout/layout.module';
+import { MatIconModule } from '@angular/material/icon';
 
 
 
@@ -20,7 +21,8 @@ import { LayoutModule } from './project/pages/layout/layout.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     UserModule,
-    LayoutModule
+    LayoutModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
