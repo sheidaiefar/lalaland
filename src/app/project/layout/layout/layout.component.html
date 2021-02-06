@@ -1,9 +1,14 @@
-<mat-drawer-container class="example-container" [hasBackdrop]="false">
-    <mat-drawer [position]="'end'" #drawer [mode]="'side'">
-        I'm menu
-        <app-menu></app-menu>
-    </mat-drawer>
-    <mat-drawer-content>
-        <app-header (menuToggle)="drawer.toggle()"></app-header>
-    </mat-drawer-content>
-</mat-drawer-container>
+<div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
+    <app-header (menuToggle)="drawer.toggle()"></app-header>
+    <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+        <mat-sidenav #drawer [position]="'end'" [mode]="mobileQuery.matches ? 'over' : 'side'"
+            [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+            <mat-nav-list>
+                <app-menu></app-menu>
+            </mat-nav-list>
+        </mat-sidenav>
+        <mat-sidenav-content>
+
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</div>
