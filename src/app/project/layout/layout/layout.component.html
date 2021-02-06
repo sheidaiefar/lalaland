@@ -1,8 +1,12 @@
-<mat-sidenav-container class="example-container">
-    <mat-sidenav mode="side" opened mode="side" position="end">
+<mat-drawer-container class="example-container" [hasBackdrop]="false">
+    <mat-drawer [position]="'end'" #drawer [mode]="'over'">
+        I'm menu
         <app-menu></app-menu>
-    </mat-sidenav>
-    <mat-sidenav-content>
+    </mat-drawer>
+    <mat-drawer-content>
         <app-header></app-header>
-    </mat-sidenav-content>
-</mat-sidenav-container>
+        <button mat-raised-button (click)="drawer.toggle()">
+            Toggle drawer
+        </button>
+    </mat-drawer-content>
+</mat-drawer-container>

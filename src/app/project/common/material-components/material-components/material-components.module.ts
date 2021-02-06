@@ -1,27 +1,32 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HeaderComponent } from './header/header.component';
-import { LayoutComponent } from './layout/layout.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-import { MenuComponent } from './menu/menu.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
-import { MaterialComponentsModule } from '../common/material-components/material-components/material-components.module';
+
 
 
 @NgModule({
-  declarations: [
-    HeaderComponent,
-    LayoutComponent,
-    MenuComponent
+  declarations: [],
+  exports:[
+    MatSidenavModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatSelectModule,
   ],
-  exports: [LayoutComponent],
   imports: [
     CommonModule,
-    MaterialComponentsModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatSelectModule,
   ]
 })
-export class LayoutModule { }
+export class MaterialComponentsModule { }
