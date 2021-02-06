@@ -4,9 +4,6 @@
         <app-menu></app-menu>
     </mat-drawer>
     <mat-drawer-content>
-        <app-header></app-header>
-        <button mat-raised-button (click)="drawer.toggle()">
-            Toggle drawer
-        </button>
+        <app-header (menuToggle)="drawer.toggle()"></app-header>
     </mat-drawer-content>
 </mat-drawer-container>
