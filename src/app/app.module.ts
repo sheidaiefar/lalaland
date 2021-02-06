@@ -21,7 +21,7 @@ import { LayoutModule } from './project/layout/layout.module';
     BrowserAnimationsModule,
     UserModule,
     LayoutModule,
-    MatIconModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
