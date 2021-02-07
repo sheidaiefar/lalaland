@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-content',
+  selector: 'page-content',
   templateUrl: './content.component.html',
-  styleUrls: ['./content.component.css']
+  styles: [':host {display: block;}'],
 })
 export class ContentComponent {
 

@@ -6,8 +6,8 @@
     <div mat-line> {{folder.updated | date}} </div>
   </mat-list-item>
   <mat-divider></mat-divider>
-  <div mat-subheader>Notes</div>
 
+  <div mat-subheader>Notes</div>
   <mat-list-item *ngFor="let note of notes">
     <mat-icon mat-list-icon>note</mat-icon>
     <div mat-line>{{note.name}}</div>
