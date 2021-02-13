@@ -4,7 +4,7 @@ import { HeaderComponent } from './header/header.component';
 import { LayoutComponent } from './layout/layout.component';
 import { MenuComponent } from './menu/menu.component';
 import { MaterialComponentsModule } from '../common/material-components/material-components/material-components.module';
-import { ContentModule } from '../pages/content/content.module';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -17,7 +17,7 @@ import { ContentModule } from '../pages/content/content.module';
   imports: [
     CommonModule,
     MaterialComponentsModule,
-    ContentModule,
+    RouterModule,    
   ]
 })
 export class LayoutModule { }
