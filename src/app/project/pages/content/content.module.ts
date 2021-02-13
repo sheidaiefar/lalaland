@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ContentComponent } from './content/content.component';
+import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     ContentComponent
@@ -9,7 +10,8 @@ import { ContentComponent } from './content/content.component';
     ContentComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
 })
 export class ContentModule { }

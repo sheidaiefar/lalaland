@@ -1,16 +1,35 @@
 <mat-list>
-  <div mat-subheader>Folders</div>
-  <mat-list-item *ngFor="let folder of folders">
-    <mat-icon mat-list-icon>folder</mat-icon>
-    <div mat-line>{{folder.name}}</div>
-    <div mat-line> {{folder.updated | date}} </div>
+  <div mat-subheader></div>
+  <mat-list-item>
+    <mat-icon mat-list-icon>camera</mat-icon>
+    <div mat-line>{{'همه'}}</div>
+  </mat-list-item>
+  <mat-list-item>
+    <mat-icon mat-list-icon>videocam</mat-icon>
+    <div mat-line>{{'ویدیو'}}</div>
+  </mat-list-item>
+  <mat-list-item>
+    <mat-icon mat-list-icon>music_video</mat-icon>
+    <div mat-line>{{'موسیقی'}}</div>
+  </mat-list-item>
+  <mat-list-item>
+    <mat-icon mat-list-icon>ondemand_video</mat-icon>
+    <div mat-line>{{'فیلم'}}</div>
+  </mat-list-item>
+  <mat-list-item>
+    <mat-icon mat-list-icon>live_tv</mat-icon>
+    <div mat-line>{{'سریال'}}</div>
   </mat-list-item>
   <mat-divider></mat-divider>
-
-  <div mat-subheader>Notes</div>
-  <mat-list-item *ngFor="let note of notes">
-    <mat-icon mat-list-icon>note</mat-icon>
-    <div mat-line>{{note.name}}</div>
-    <div mat-line> {{note.updated | date}} </div>
+  <div mat-subheader>
+    <mat-icon>supervised_user_circle</mat-icon> کاربران
+  </div>
+  <mat-list-item>
+    <mat-icon mat-list-icon>import_contacts</mat-icon>
+    <div mat-line>{{'ثبت نام'}}</div>
+  </mat-list-item>
+  <mat-list-item>
+    <mat-icon mat-list-icon>input</mat-icon>
+    <div mat-line>{{'ورود'}}</div>
   </mat-list-item>
 </mat-list>
