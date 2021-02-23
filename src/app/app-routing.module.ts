@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ContentComponent } from './project/pages/content/content/content.component';
+import { HomeComponent } from './project/pages/content/home/home.component';
 import { SignupComponent } from './project/pages/login/signup/signup.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: ContentComponent,
+    component: HomeComponent,
     pathMatch:'full'    
   },
   {

@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ContentComponent } from './content/content.component';
+import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
-    ContentComponent
+    HomeComponent
   ],
   exports: [
-    ContentComponent
+    HomeComponent
   ],
   imports: [
     CommonModule,
