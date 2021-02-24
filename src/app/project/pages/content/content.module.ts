@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './home-page/home.component';
 import { RouterModule, Routes } from '@angular/router';
-import { AllComponent } from './all/all.component';
-import { MusicComponent } from './music/music.component';
-import { FilmComponent } from './film/film.component';
-import { VideoComponent } from './video/video.component';
-import { SerialComponent } from './serial/serial.component';
+import { AllComponent } from './all-page/all.component';
+import { MusicComponent } from './music-page/music.component';
+import { FilmComponent } from './film-page/film.component';
+import { VideoComponent } from './video-page/video.component';
+import { SerialComponent } from './serial-page/serial.component';
 
 
 const routes: Routes = [

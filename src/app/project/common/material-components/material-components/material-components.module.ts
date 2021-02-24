@@ -29,8 +29,7 @@ import {MatListModule} from '@angular/material/list';
     MatButtonModule,
     MatFormFieldModule,
     MatSelectModule,
-    MatListModule
-    
+    MatListModule,
     
   ]
 })
