@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FavoriteStarComponent } from './project/common/rating/favorite-star/favorite-star.component';
 import { LayoutModule } from './project/layout/layout.module';
+import { CommonModule } from './project/common/common.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +15,8 @@ import { LayoutModule } from './project/layout/layout.module';
     BrowserModule,
     BrowserAnimationsModule,    
     LayoutModule,
-    AppRoutingModule    
+    AppRoutingModule,
+    CommonModule    
   ],
   providers: [],
   bootstrap: [AppComponent]
