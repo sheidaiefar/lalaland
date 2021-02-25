@@ -1,7 +1,7 @@
 <div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
     <app-header (menuToggle)="drawer.toggle()"></app-header>
     <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
-        <mat-sidenav #drawer [position]="'end'" [mode]="mobileQuery.matches ? 'over' : 'side'"
+        <mat-sidenav #drawer [position]="'start'" [mode]="mobileQuery.matches ? 'over' : 'side'"
             [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
             <app-menu></app-menu>
         </mat-sidenav>

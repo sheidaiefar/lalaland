@@ -4,12 +4,21 @@
 @import "./assets/libs/material-icons/material-icons.css";
 
 @font-face {
-    font-family: 'IranianSans';
-    font-style: normal;
-    font-weight: 500;
-    font-display: block;
-    src: url("./assets/fonts/IranianSans.ttf") format("truetype") }
+  font-family: 'IranianSans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: block;
+  src: url("./assets/fonts/IranianSans.ttf") format("truetype")
+}
 
 
-  html, body { height: 100%; }
-body { margin: 0; font-family: "IranianSans" !important}
+html,
+body {
+  height: 100%;
+  direction: rtl;
+}
+
+body {
+  margin: 0;
+  font-family: "IranianSans" !important
+}
