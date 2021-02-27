@@ -25,7 +25,7 @@ const routes: Routes = [
   },
   {
     path: 'access',
-    component: AccessLayoutModule,
+   // component: AccessLayoutModule,
     loadChildren: () => import('./access-area/access.module').then(x => x.AccessModule),
   },
   {
