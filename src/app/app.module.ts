@@ -3,10 +3,9 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { WorkSpaceModule } from './work_space/work-space.module';
-import { AccessModule } from './access_area/access.module';
-import { PublicAreaModule } from './public_area/public-area.module';
-
+import { WorkSpaceModule } from './work-space/work-space.module';
+import { AccessModule } from './access-area/access.module';
+import { PublicAreaModule } from './public-area/public-area.module';
 
 @NgModule({
   declarations: [

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { SlideshowComponent } from './work_space_common/slideshow/slideshow.component';
+import { SlideshowComponent } from './work-space-common/slideshow/slideshow.component';
 
 
 const routes: Routes = [
@@ -10,7 +10,7 @@ const routes: Routes = [
   },
   {
     path: 'content',
-    loadChildren: () => import('./work_space_pages/content/content.module').then(x => x.ContentModule)
+    loadChildren: () => import('./work-space-pages/content/content.module').then(x => x.ContentModule)
   },
 ];
 
