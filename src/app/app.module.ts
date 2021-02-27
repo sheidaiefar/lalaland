@@ -3,20 +3,20 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FavoriteStarComponent } from './project/common/rating/favorite-star/favorite-star.component';
-import { LayoutModule } from './project/layout/layout.module';
-import { CommonModule } from './project/common/common.module';
+import { WorkSpaceModule } from './work_space/work-space.module';
+import { AccessModule } from './access_area/access.module';
+
+
 @NgModule({
   declarations: [
     AppComponent,
-    FavoriteStarComponent
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,    
-    LayoutModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
-    CommonModule    
+    WorkSpaceModule,
+    AccessModule
   ],
   providers: [],
   bootstrap: [AppComponent]

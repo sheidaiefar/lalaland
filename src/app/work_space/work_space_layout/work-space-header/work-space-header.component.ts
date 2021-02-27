@@ -1,8 +1,8 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  selector: 'work-space-header',
+  templateUrl: './work-space-header.component.html',
+  styleUrls: ['./work-space-header.component.css']
 })
 export class HeaderComponent {
   @Output('menuToggle') menuToggle = new EventEmitter();
