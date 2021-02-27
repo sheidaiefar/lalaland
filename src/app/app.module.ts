@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WorkSpaceModule } from './work_space/work-space.module';
 import { AccessModule } from './access_area/access.module';
+import { PublicAreaModule } from './public_area/public-area.module';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { AccessModule } from './access_area/access.module';
     BrowserAnimationsModule,
     AppRoutingModule,
     WorkSpaceModule,
-    AccessModule
+    AccessModule,
+    PublicAreaModule
   ],
   providers: [],
   bootstrap: [AppComponent]

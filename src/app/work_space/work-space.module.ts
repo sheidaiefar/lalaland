@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { WorkSpaceLayoutModule } from './work_space_layout/work-space-layout.module';
 import { WorkSpaceRoutingModule } from './work-space-routing.module';
-
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -12,8 +12,8 @@ import { WorkSpaceRoutingModule } from './work-space-routing.module';
     WorkSpaceRoutingModule,
     WorkSpaceLayoutModule
   ],
-  exports:[
-    WorkSpaceLayoutModule
+  exports: [
+    WorkSpaceLayoutModule,
   ]
 })
 export class WorkSpaceModule { }

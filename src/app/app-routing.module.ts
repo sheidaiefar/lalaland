@@ -9,14 +9,11 @@ const routes: Routes = [
     component: HomeComponent,
     pathMatch: 'full'
   },
-  // {
-  //   path: 'test',
-  //     component: SlideshowComponent,
-  // },
-  // {
-  //   path: 'content',
-  // loadChildren: () => import('').then(x => x.ContentModule)
-  // },
+  {
+    path: 'work-space',
+    loadChildren: () => import('./work_space/work-space.module').then(x => x.WorkSpaceModule),
+  }
+
 ];
 
 @NgModule({
