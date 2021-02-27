@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { PublicHomeComponent } from './public-area/public-area-pages/public-home/public-home.component';
 import { HomeComponent } from './work-space/work-space-pages/content/home-page/home.component';
 
 
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent,
+    component: PublicHomeComponent ,
     pathMatch: 'full'
   },
   {
